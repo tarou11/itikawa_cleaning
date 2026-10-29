@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>イチカワクリーニング | 札幌市白石区のクリーニング店</title>
+<meta name="description" content="札幌市白石区のイチカワクリーニング。国家資格者4名が一点ずつ丁寧に仕上げます。高級ダウン、ぬいぐるみ、ベビーカー、テントまで。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#ffffff; --mist:#f3f6f8; --navy:#14253a; --ink:#1f2933; --gray:#5f6b76;
+  --gold:#b39b6b; --line:#dfe5ea;
+  --serif:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--white);line-height:1.9;font-size:16px;-webkit-text-size-adjust:100%}
+body{line-break:strict;word-break:auto-phrase;overflow-wrap:break-word}
+.nb{display:inline-block}
+h2,h3,.lead{text-wrap:balance}
+p,li,dd{text-wrap:pretty}
+img{display:block;width:100%;height:100%;object-fit:cover;background:var(--mist)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+section{padding:112px 0}
+h2{font-family:var(--serif);font-weight:500;font-size:clamp(26px,4vw,34px);line-height:1.6;letter-spacing:.12em;color:var(--navy);text-align:center}
+h2::after{content:"";display:block;width:40px;height:1px;background:var(--gold);margin:28px auto 0}
+.lead{max-width:640px;margin:36px auto 0;text-align:center;color:var(--gray)}
+.btn{display:inline-block;padding:16px 36px;border:1px solid var(--navy);background:var(--navy);color:var(--white);text-decoration:none;letter-spacing:.1em;font-size:15px;transition:background .2s,color .2s}
+.btn:hover{background:var(--white);color:var(--navy)}
+.btn.ghost{background:transparent;color:var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:var(--white)}
+.btn.light{background:var(--white);color:var(--navy);border-color:var(--white)}
+.btn.light:hover{background:transparent;color:var(--white)}
+.btn.ghost-light{background:transparent;color:var(--white);border-color:rgba(255,255,255,.7)}
+.btn.ghost-light:hover{background:var(--white);color:var(--navy)}
+
+/* hero */
+.hero{position:relative;min-height:100vh;padding:0;background:#d6e9ee url(images/image1.jpg) center/cover no-repeat;color:#111}
+.hero::before{content:"";position:absolute;inset:0;background:rgba(236,247,249,.35)}
+.hero-inner{position:relative;display:flex;align-items:flex-start;padding:clamp(48px,10.4vh,120px) 6vw 96px 11.4vw}
+.hero-side{writing-mode:vertical-rl;font-family:var(--serif);font-size:clamp(11px,1.1vw,18px);letter-spacing:.3em;line-height:1.6}
+.hero h1{writing-mode:vertical-rl;font-family:var(--serif);font-weight:500;font-size:clamp(28px,3.3vw,56px);line-height:2.1;letter-spacing:.12em;margin:0 6.5vw 0 5vw;color:#111}
+.hero-sub{font-size:clamp(14px,1.3vw,20px);line-height:1.8;letter-spacing:.04em;padding-top:.8vw}
+.hero-sub .fv-btn{display:flex;align-items:center;justify-content:center;width:clamp(200px,17.5vw,300px);height:clamp(52px,4.3vw,70px);margin-top:clamp(32px,4vw,64px);background:#111;color:#fff;text-decoration:none;letter-spacing:.06em;transition:opacity .2s}
+.hero-sub .fv-btn:hover{opacity:.8}
+
+/* strengths */
+.strengths{background:var(--mist)}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:72px}
+.col h3{font-family:var(--serif);font-weight:500;font-size:20px;letter-spacing:.08em;color:var(--navy);padding-bottom:16px;border-bottom:1px solid var(--gold);margin-bottom:20px}
+.col p{color:var(--gray);font-size:15px}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.split .photo{aspect-ratio:4/5}
+.split.rev .photo{order:2}
+.split h2{text-align:left}
+.split h2::after{margin-left:0}
+.split p{margin-top:24px;color:var(--gray)}
+
+/* services */
+.services{background:var(--mist)}
+.svc{display:grid;grid-template-columns:repeat(2,1fr);gap:0 64px;margin-top:64px}
+.svc li{list-style:none;padding:24px 0;border-bottom:1px solid var(--line)}
+.svc b{display:block;font-family:var(--serif);font-weight:500;font-size:18px;letter-spacing:.06em;color:var(--navy)}
+.svc span{font-size:14px;color:var(--gray)}
+.center{text-align:center;margin-top:56px}
+.note{font-size:13px;color:var(--gray);margin-top:16px}
+
+/* voices */
+.voices{display:grid;grid-template-columns:repeat(2,1fr);gap:40px;margin-top:64px}
+.voice{border:1px solid var(--line);padding:40px 36px}
+.stars{color:var(--gold);letter-spacing:.2em;margin-bottom:16px}
+.voice p{font-size:15px;color:var(--ink)}
+.src{margin-top:20px;font-size:12px;color:var(--gray)}
+
+/* proposal */
+.proposal{background:var(--navy);color:var(--white)}
+.proposal h2{color:var(--white)}
+.proposal .tag{display:block;text-align:center;font-size:13px;letter-spacing:.2em;color:var(--gold);margin-bottom:20px}
+.proposal .lead{color:rgba(255,255,255,.8)}
+.proposal ul{max-width:640px;margin:48px auto 0;list-style:none}
+.proposal li{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.2);font-size:15px}
+.proposal li b{font-family:var(--serif);font-weight:500;letter-spacing:.06em;margin-right:12px}
+
+/* access */
+.info{max-width:640px;margin:56px auto 0}
+.info dl{display:grid;grid-template-columns:120px 1fr;border-top:1px solid var(--line)}
+.info dt,.info dd{padding:18px 0;border-bottom:1px solid var(--line);font-size:15px}
+.info dt{color:var(--gray)}
+.map{margin-top:56px}
+.map iframe{display:block;width:100%;height:450px;border:0}
+.map-btn{text-align:center;margin-top:32px}
+
+/* footer */
+.fcta{background:var(--navy);color:var(--white);text-align:center;padding:96px 24px}
+.fcta p.t{font-family:var(--serif);font-size:clamp(22px,3.4vw,30px);letter-spacing:.12em;line-height:1.8}
+.fcta .cta{margin-top:40px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.links{margin-top:48px;font-size:13px;display:flex;gap:28px;justify-content:center;flex-wrap:wrap}
+.links a{color:rgba(255,255,255,.8)}
+.copy{margin-top:40px;font-size:12px;color:rgba(255,255,255,.55)}
+
+/* mobile bar */
+.bar{display:none}
+
+@media(max-width:820px){
+  section{padding:80px 0}
+  .hero{min-height:88vh}
+  .hero-inner{flex-wrap:wrap;padding:56px 24px 72px}
+  .hero-side{font-size:12px}
+  .hero h1{font-size:clamp(26px,7.4vw,38px);margin:0 0 0 22px}
+  .hero-sub{flex-basis:100%;margin-top:40px;font-size:14px;padding-top:0}
+  .cols3,.split,.voices,.svc{grid-template-columns:1fr}
+  .cols3{gap:40px}
+  .split{gap:40px}
+  .split.rev .photo{order:0}
+  .info dl{grid-template-columns:96px 1fr}
+  .map iframe{height:360px}
+  body{padding-bottom:64px}
+  .bar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--white);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+  .bar a{padding:18px 0;text-align:center;text-decoration:none;font-size:14px;letter-spacing:.1em;color:var(--navy)}
+  .bar a+a{background:var(--navy);color:var(--white)}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<!-- ファーストビュー -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-side">イチカワクリーニング<br><span style="text-combine-upright:all">1969</span>年創業</div>
+    <h1>どこよりも綺麗に、<br>あなたの一着を。</h1>
+    <div class="hero-sub">
+      札幌市白石区のクリーニング店。<br><span class="nb">国家資格者4名が、</span><span class="nb">一点ずつ</span><span class="nb">丁寧に仕上げます。</span><br><span class="nb">高級ダウンから</span><span class="nb">ぬいぐるみまで、</span><span class="nb">お任せください。</span>
+      <a class="fv-btn" href="#access">店舗情報を見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- 強み -->
+<section class="strengths">
+  <div class="wrap">
+    <h2>選ばれる理由</h2>
+    <div class="cols3">
+      <div class="col">
+        <h3><span class="nb">国家資格者による</span><span class="nb">丁寧な仕上げ</span></h3>
+        <p><span class="nb">国家資格を持つクリーニング師4名が、</span><span class="nb">染み抜きから仕上げまで</span><span class="nb">丁寧に手がけます。</span></p>
+      </div>
+      <div class="col">
+        <h3><span class="nb">繊細な取り扱いと</span><span class="nb">高度な技術</span></h3>
+        <p><span class="nb">洗浄、シミ抜き、補色、修理の技術を</span><span class="nb">組み合わせ、</span><span class="nb">一点ごとの状態に</span><span class="nb">合わせて対応します。</span></p>
+      </div>
+      <div class="col">
+        <h3>多くの実績と評価</h3>
+        <p><span class="nb">楽天市場の月間優良ショップを</span><span class="nb">22回受賞。</span><span class="nb">テレビ・新聞・雑誌・WEBなど、</span><span class="nb">70件以上のメディアに</span><span class="nb">取り上げられています。</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 創業の想い -->
+<section>
+  <div class="wrap split">
+    <div class="photo"><img src="images/image2.jpg" alt="イチカワクリーニングの店づくり"></div>
+    <div>
+      <h2>創業から受け継ぐ<br>仕事への姿勢</h2>
+      <p><span class="nb">1969年、</span><span class="nb">札幌市白石区で</span><span class="nb">初代が始めた店を、</span><span class="nb">現在は三代目が</span><span class="nb">受け継いでいます。</span></p>
+      <p><span class="nb">昔ながらの技術を</span><span class="nb">大切にしながら、</span><span class="nb">全国宅配やLINEでの</span><span class="nb">写真相談など、</span><span class="nb">新しい仕組みも</span><span class="nb">取り入れてきました。</span><span class="nb">「きれいにして、</span><span class="nb">これからも大切に使いたい」という</span><span class="nb">お客様の想いに</span><span class="nb">応え続けることが、</span><span class="nb">私たちの仕事です。</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- 取扱品目 -->
+<section class="services">
+  <div class="wrap">
+    <h2>お預かりできるもの</h2>
+    <p class="lead"><span class="nb">衣類から、</span><span class="nb">ご家庭では洗いにくい品物まで。</span><span class="nb">「イチカワさんなら」と</span><span class="nb">頼っていただく中で、</span><span class="nb">取扱いが広がってきました。</span></p>
+    <ul class="svc">
+      <li><b><span class="nb">高級ダウン・</span><span class="nb">ブランド衣類</span></b><span><span class="nb">カナダグースなど。</span><span class="nb">擦れて白くなった部分の</span><span class="nb">補色にも対応します。</span></span></li>
+      <li><b>ぬいぐるみ</b><span><span class="nb">洗浄と綿の入れ替え。</span><span class="nb">思い出の詰まった</span><span class="nb">一体を丁寧に。</span></span></li>
+      <li><b><span class="nb">ベビーカー・</span><span class="nb">チャイルドシート</span></b><span>分解洗浄や除菌など。</span></li>
+      <li><b><span class="nb">テント・</span><span class="nb">アウトドア用品</span></b><span><span class="nb">テントや傘、</span><span class="nb">撥水加工などの</span><span class="nb">ご相談に対応します。</span></span></li>
+      <li><b>布団</b><span><span class="nb">布団クリーニングを</span><span class="nb">承っています。</span></span></li>
+      <li><b>お直し・色補正</b><span><span class="nb">色あせ、</span><span class="nb">破れ、</span><span class="nb">補色など。</span><span class="nb">帽子の修理も</span><span class="nb">承ります。</span></span></li>
+    </ul>
+    <div class="center">
+      <a class="btn ghost" href="https://ichikawa929.jp/%e5%95%86%e5%93%81%e7%b4%b9%e4%bb%8b/" target="_blank" rel="noopener">料金表を見る</a>
+      <p class="note"><span class="nb">料金は公式サイトの</span><span class="nb">料金表をご確認ください。</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ご利用方法 -->
+<section>
+  <div class="wrap split rev">
+    <div class="photo"><img src="images/image3.jpg" alt="イチカワクリーニングの作業の様子"></div>
+    <div>
+      <h2>ご利用方法</h2>
+      <p><b>店頭へのお持ち込み</b><br><span class="nb">札幌市白石区の</span><span class="nb">店舗で承ります。</span></p>
+      <p><b>全国宅配</b><br><span class="nb">遠方の方も、</span><span class="nb">宅配クリーニングで</span><span class="nb">ご利用いただけます。</span></p>
+      <p><b>LINEで相談</b><br><span class="nb">写真を送っての</span><span class="nb">ご相談もできます。</span></p>
+      <p style="margin-top:32px"><a class="btn ghost" href="http://line.naver.jp/ti/p/%40ichikawa929" target="_blank" rel="noopener">LINEで相談する</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- お客様の声 -->
+<section class="strengths">
+  <div class="wrap">
+    <h2>お客様の声</h2>
+    <div class="voices">
+      <div class="voice" style="background:var(--white)">
+        <div class="stars" aria-label="5点中4点">★★★★</div>
+        <p><span class="nb">息子が大事にしていた</span><span class="nb">ぬいぐるみの</span><span class="nb">クリーニングと</span><span class="nb">綿詰め替えを</span><span class="nb">お願いしました！</span><span class="nb">とっても綺麗にして</span><span class="nb">見違えるように</span><span class="nb">パンパンになって</span><span class="nb">息子も喜んでました！</span><span class="nb">ぬいぐるみの</span><span class="nb">メンテナンスで</span><span class="nb">色々探してましたが、</span><span class="nb">シンプルな料金体系で</span><span class="nb">依頼しやすかったです。</span><span class="nb">ありがとうございました。</span></p>
+        <div class="src">クチコミ</div>
+      </div>
+      <div class="voice" style="background:var(--white)">
+        <div class="stars" aria-label="5点中5点">★★★★★</div>
+        <p><span class="nb">長年大切にしてきた</span><span class="nb">ぬいぐるみの</span><span class="nb">クリーニングと</span><span class="nb">綿入れ替えを</span><span class="nb">お願いしました。</span><span class="nb">出来上がりが</span><span class="nb">きれいなのはもちろんのこと、</span><span class="nb">対応もスムーズ</span><span class="nb">且つ丁寧でした。</span><span class="nb">全て含めて</span><span class="nb">大満足です！</span><span class="nb">本当にありがとうございました！</span><span class="nb">次もまた</span><span class="nb">イチカワクリーニングさんに</span><span class="nb">お願いしたいです(^^)</span></p>
+        <div class="src">クチコミ</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 提案 -->
+<section class="proposal">
+  <div class="wrap">
+    <span class="tag">ご提案</span>
+    <h2><span class="nb">有ればいいなと</span><span class="nb">思うサービス</span></h2>
+    <p class="lead"><span class="nb">お客様目線での、</span><span class="nb">ひとつの提案です。</span></p>
+    <ul>
+      <li><b><span class="nb">24時間受取ロッカー</span><span class="nb">(または夜間受取ボックス)</span></b></li>
+      <li><span class="nb">営業時間内に来店しにくい方も、</span><span class="nb">ご都合のよい時間に</span><span class="nb">受け取れます。</span></li>
+      <li><span class="nb">仕事帰りや早朝など、</span><span class="nb">生活のリズムに合わせて</span><span class="nb">利用できます。</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- アクセス -->
+<section id="access">
+  <div class="wrap">
+    <h2>店舗情報</h2>
+    <div class="info">
+      <dl>
+        <dt>店名</dt><dd>イチカワクリーニング</dd>
+        <dt>住所</dt><dd>〒003-0832<br><span class="nb">北海道札幌市白石区</span><span class="nb">北郷2条6丁目6-1</span></dd>
+        <dt>電話番号</dt><dd><a href="tel:05018094142">050-1809-4142</a></dd>
+        <dt>営業時間</dt><dd>月〜金 9:00〜18:00<br>土 9:00〜15:00</dd>
+        <dt>定休日</dt><dd>日曜・祝日</dd>
+        <dt>メール</dt><dd><a href="mailto:info@ichikawa929.com">info@ichikawa929.com</a></dd>
+      </dl>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.383210811839!2d141.4187620875579!3d43.05440728696172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2b9332afd017%3A0xba3307722c9cf9da!2z44Kk44OB44Kr44Ov44Kv44Oq44O844OL44Oz44Kw!5e0!3m2!1sja!2sjp!4v1793237352693!5m2!1sja!2sjp" title="イチカワクリーニングの地図" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <div class="map-btn">
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=イチカワクリーニング+北海道札幌市白石区北郷2条6丁目6-1" target="_blank" rel="noopener">地図を開く</a>
+    </div>
+  </div>
+</section>
+
+<!-- フッターCTA -->
+<footer class="fcta">
+  <p class="t">大切な一着を、<br>安心してお任せください。</p>
+  <div class="cta">
+    <a class="btn light" href="tel:05018094142">050-1809-4142</a>
+    <a class="btn ghost-light" href="https://www.google.com/maps/search/?api=1&query=イチカワクリーニング+北海道札幌市白石区北郷2条6丁目6-1" target="_blank" rel="noopener">地図を開く</a>
+  </div>
+  <div class="links">
+    <a href="https://ichikawa929.jp/" target="_blank" rel="noopener">公式サイト</a>
+    <a href="https://www.instagram.com/ichikawa929/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/@richlab929" target="_blank" rel="noopener">YouTube</a>
+  </div>
+  <p class="copy">&copy; イチカワクリーニング</p>
+</footer>
+
+<nav class="bar" aria-label="お問い合わせ">
+  <a href="tel:05018094142">電話する</a>
+  <a href="#access">アクセス</a>
+</nav>
+
+</body>
+</html>
